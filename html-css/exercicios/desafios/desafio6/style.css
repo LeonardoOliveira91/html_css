@@ -65,3 +65,11 @@ border:1px solid #c0c0c0;
 display:block;
 width:150px;
 }
+body > ul{
+    columns: 2;
+    background-color: gray;
+    padding: 10px;
+    list-style: armenian;
+    list-style-position: inside;
+    word-spacing: 5px;
+}

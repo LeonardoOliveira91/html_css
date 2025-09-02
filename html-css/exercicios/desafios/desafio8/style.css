@@ -65,3 +65,40 @@ border:1px solid #c0c0c0;
 display:block;
 width:150px;
 }
+body > ul{
+    background-color: rgba(128, 128, 128, 0) ;
+    columns: 2;
+    gap: 400px;
+    margin-left: 50px;
+    max-width: fit-content;
+    
+}
+.pag > li> a{
+     text-decoration: none;
+     font-size: x-large;
+     color: #333;
+     max-width: fit-content;
+    }
+.fundoama{
+    background-color: rgba(255, 255, 0, 0.493);
+}
+.fundoverde{
+    background-color: rgba(0, 128, 0, 0.466);
+}
+.pag >li>a:hover{
+    text-decoration: underline;
+    max-width: fit-content;
+}
+.pag > .green:hover{
+    background-color: rgba(0, 128, 0, 0.582);
+    max-width: fit-content;
+}
+.pag > .yellow:hover{
+    background-color: rgba(255, 255, 0, 0.603);
+    max-width: fit-content;
+}
+.pag > .gray:hover{
+    background-color: gray;
+    max-width: fit-content;
+}
+

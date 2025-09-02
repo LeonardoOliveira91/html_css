@@ -65,3 +65,15 @@ border:1px solid #c0c0c0;
 display:block;
 width:150px;
 }
+
+main >.foto{text-align: center;    
+}
+main >p{margin: auto;
+    padding: 10px;
+    max-width: 500px;
+}
+.links{
+    background-color: gray;
+   background-image: linear-gradient( rgb(85, 85, 85),rgb(160, 159, 159),gray);
+    border-radius: 5px;
+}

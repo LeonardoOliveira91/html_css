@@ -65,3 +65,43 @@ border:1px solid #c0c0c0;
 display:block;
 width:150px;
 }
+table{
+    
+    margin: auto;
+    padding: 10px;
+}
+td{
+    border: 3px solid black;
+    padding: 10px;
+    margin: 2px;    
+}
+td:hover{
+    background-color: yellow;
+}
+td >a:hover{
+    background-color: yellow;
+}
+.div{
+    text-align: center;
+    
+}
+.div>a{
+    text-decoration: none;
+}
+.div>a:hover{
+    text-decoration: underline;
+}
+.div >p>a{
+    text-decoration: none;
+}
+.div>p>a:hover{
+    text-decoration: underline;
+    background-color: tomato;
+}
+.tabela{
+    text-align: center;
+    
+}
+.ulvideo{
+    background-color:  rgba(128, 128, 128, 0.007);
+}

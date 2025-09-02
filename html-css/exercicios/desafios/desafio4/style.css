@@ -8,6 +8,7 @@ body{
     margin-bottom: 15px;
     background-attachment: fixed;
     margin: 0;
+    text-align: j;
 }
 body h1{
     text-align: center;
@@ -33,11 +34,19 @@ float:left;
 }*/
 nav{width: 100%;
 background-color: green;}
-ul{background-color: green;}
+
+.emoji{background-color:  rgba(128, 128, 128, 0.568);}
+.emoji{
+    columns: 2;
+}
+.emoji >li{
+    background-color: rgba(128, 128, 128, 0.568);;
+}
 .menu{
 list-style:none;
 border:1px solid #c0c0c0;
 float:left;
+background-color: green;
 }
 
 .menu li{
@@ -58,6 +67,7 @@ top:25px;
 left:0;
 background-color:#fff;
 display:none;
+
 }
 .menu li:hover ul, .menu li.over ul{display:block;}
 .menu li ul li{
