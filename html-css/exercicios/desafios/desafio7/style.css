@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Estilização do overlay */
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: transform 1s ease, opacity 1s ease;
+      z-index: 10;
+    }
+
+    /* Caixa de mensagem */
+    .overlay h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    /* Botão estilizado */
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: #ff9800;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e68900;
+    }
+
+    /* Checkbox escondido */
+    #fechar {
+      display: none;
+    }
+
+    /* Quando clicado, o overlay desliza + desbota */
+    #fechar:checked ~ .overlay {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Conteúdo principal */
+    .conteudo {
+      padding: 40px;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #f5f5f5, #ddd);
+      animation: aparecer 1s ease forwards;
+      opacity: 0;
+    }
+
+    /* Animação de fade in para o conteúdo principal */
+    #fechar:checked ~ .conteudo {
+      animation: aparecer 1s ease forwards;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

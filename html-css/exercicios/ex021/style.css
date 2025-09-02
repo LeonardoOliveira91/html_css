@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+    background-color: gray;
+}
+section{background-color: aliceblue; margin-bottom: 10px;}
+article{
+    background-color: aqua;
+    margin-top: 10px;
+}
+article > aside{
+    background-color: blue;
+}
+article > aside:hover{
+    background-color: red;
+}
+nav{
+    background-color: rgba(255, 3, 3, 0.596);
+    padding: 10px;
+    box-shadow: 1xp 100px 1px blue;
+    border-radius: 20px;
+    margin-bottom: 130px;
+}
+nav > a{
+    text-decoration: none;
+    margin-right: 30px;
+}
+nav >a:hover{
+    text-decoration: underline;
+    background-color: brown;
+}

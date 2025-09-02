@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Checkbox que controla o overlay -->
+    <input type="checkbox" id="fechar">
+
+    <!-- Tela de boas-vindas -->
+    <div class="overlay">
+        <h1>Bem-vindo à minha página!</h1>
+        <label for="fechar" class="btn">Início</label>
+    </div>
+
+    <h1>Imagem flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor
+        experiência!! </p>
+    <picture>
+        <source media="(max-width:500px )" srcset="../icones-e-imagens/paisagem-m.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="../icones-e-imagens/paisagem-p.png" type="image/png">
+        <img src="../icones-e-imagens/paisagem-g.png" alt="foto">
+    </picture>
+
+    <p><a href="../desafio6/desafio6.html">desafio 6</a></p>
+    <a href="../desafio0/index.html">Home</a>
+    <p><a href="../desafio8/desafio8.html">Desafio 8</a></p>
+</body>
+
+</html>
