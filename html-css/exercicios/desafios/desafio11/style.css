@@ -1,0 +1,84 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;}
+
+body h1{
+    text-align: center;
+    margin-top: 50px;
+}
+header{
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(to top,#020B1A,#041450,#1c4f99,#35769c,#56abd2);
+    padding-top: 40px;
+    min-height: 150px;
+    padding: 10px;
+    
+}
+header > h1{
+    color: white;
+    font-family: var(--font-destaque);
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.753);    
+}
+
+    /*.menu{
+list-style:none;
+border:1px solid #c0c0c0;
+float:left;
+}*/
+nav{width: 100%;
+    position: absolute;
+    top: 139px;
+    
+}
+ul{background-color: #041450;}
+
+.menu{color: green;
+list-style:none;
+border:1px solid #c0c0c0;
+float:left;
+}
+
+.menu li{
+position: relative;
+z-index: 1;
+
+float:left;
+border-right:1px solid #c0c0c0;
+}
+.menu li a{color:white; text-decoration:none; padding:5px 10px; display:block;}
+
+
+.menu li a:hover{
+background:#333;
+color:#fff;
+text-shadow:0px 0px 5px #fff;
+}
+    .menu li  ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#070707;
+display:none;
+}
+.menu li:hover ul, .menu li.over ul{display:block;}
+.menu li ul li{
+border:1px solid #c0c0c0;
+display:block;
+width:150px;
+}
+
+#container{
+    position: relative;
+    height: 100vh;
+    background:black url('imagens/espaco.jpg') center center no-repeat fixed;
+    background-size: cover;    
+}
+#conteudo{
+    position: absolute;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
