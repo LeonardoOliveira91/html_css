@@ -10,9 +10,9 @@ body h1{
 header{
     position: relative;
     text-align: center;
-    background-image: linear-gradient(to top,#020B1A,#041450,#1c4f99,#35769c,#56abd2);
+    background-image: linear-gradient(to right ,#020B1A,#041450,#1c4f99,#35769c,#56abd2);
     padding-top: 40px;
-    min-height: 150px;
+    min-height: 20px;
     padding: 10px;
     
 }
@@ -29,7 +29,7 @@ float:left;
 }*/
 nav{width: 100%;
     position: absolute;
-    top: 139px;
+    
     
 }
 ul{background-color: #041450;}
