@@ -8,15 +8,20 @@
     margin: 0px;
     padding: 0px;
 }
-html,body {
-    min-height: 100vh;
+html,body {    
     background-color: darkgray;
     font-family: var(--font3);
+}
+body h1{
+    margin-left: 200px;
+    padding: auto;
+    margin-top: 90px;
+    background-color: darkgray;
 }
 
 header {
     position: relative;
-    background-color: black;
+    
     color: white;
     text-align: center;
 }
@@ -104,25 +109,37 @@ ul {
 }
 table{
     border-collapse: collapse;
-    margin-left: 42%;
     margin-top: 10vh;
+    margin-left: 40px;
 }
 td,th{border: 1px solid black;
-padding: 12px;}
-div.link{
-    columns: 2;
-    padding: 40px 0px 0px 20px;
+padding: 10px;}
+div.link{position: absolute;
+    
+    padding:40px;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    top: 10vh;
+    left: 35vw;
+    z-index: 2;
+  
+    
     
 }
 div.link>ul{
     background-color: gray;
     width: fit-content;
 }
-div.link>ul>li{
+div.link>ul>div>li{
     list-style: none;
     background-color: darkgray;
     
 }
 div.link>ul>li>a{
     text-decoration: none;
+}
+.tabela001{
+    text-align: center;
+    
 }
